@@ -1,0 +1,54 @@
+.sliderContainer{
+  overflow: hidden;
+  width: auto;
+}
+
+.sliderWrapper .imageList{
+  display: grid;
+  gap: 10px;
+  font-size: 0;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.image{
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+button {
+  cursor: pointer;
+  border-color: darkcyan;
+  background-color: white;
+  margin-left: 10px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  text-align: center;  
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button:hover{
+  border-color: lightgray;
+}
+
+#prev:hover img {
+  content: url("./arrow-gray-left.png"); 
+}
+  
+#next:hover img {
+  content: url("./arrow-gray-right.png"); 
+}
+
+.transition {
+  transition: all 1s;;
+}
